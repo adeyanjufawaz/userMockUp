@@ -1,70 +1,178 @@
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.danger{
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  margin: 40xp;
+  letter-spacing: .2rem;
+}
+.content--box{
+  text-align: center;
+  padding: 3rem;
+}
+.main--header{
+  font-size: 5rem;
+  margin: 20px 0;
+  color: #333;
+  letter-spacing: .5rem;
+}
+.sub--header{
+  text-align: center;
+  font-size: 2.3rem;
+  margin: 20px 0;
+  letter-spacing: .2rem;
+}
+.main__card--box{
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.user__card--box{
+  width: 75%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  padding: 10px;
+  width: 270px;
+  margin: 30px;
+  border-radius: 7px;
+  box-shadow: 10px 10px 11px -4px rgba(0,0,0,0.75);
+  background-color: #333;
+  transition: all .7s;
+  color: #fff;
+}
+.card:hover{
+  transform: translateY(-20px);
+}
+.card h1{
+  font-size: 2.5rem;
+}
+.card p{
+  font-size: 2rem;
+}
+.card i{
+  color: rgb(212, 186, 37);
+}
+.card h1, .card i,.card p{
+  margin: 10px auto;
+}
+.homePage--ul,.user--ul{
+  display: flex;
+  background-color: #ffd700;
+  padding: 1rem;
+  list-style: none;
+  justify-content: space-around;
+  max-width: 55%;
+  margin: 0 auto;
+}
+.links{
+  text-decoration: none;
+  color: #222;
+  font-size: 2rem;
+}
+.links:hover{
+  color: #fff;
+}
+.user--card,.user--card-red,.user--card--green{
+  width: 450px;
+  border-radius: 15px;
+  margin: 20px auto;
+  padding: 20px 10px;
+  text-align: center;
+  background-color: #777;
+  color: #fff;
+  box-shadow: 14px 17px 30px -6px rgba(0,0,0,0.25);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.img--box{
+  position: relative;
+  margin: 10px auto;
+  border: 7px double #fff;
+  width:100px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 50%;
 }
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.card--img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 90%;
+  width: 90%;
+  border-radius: 50%;
+ 
+}
+.paginationBtns{
+  width: 40%;
+  margin:50px auto;
+  font-size: 2rem;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.paginationBtns a{
+  border: 3px double #333;
+  padding: .7rem 1rem;
+  /* border-radius: 50%; */
   cursor: pointer;
-  transition: border-color 0.25s;
+  font-size: 2rem;
 }
-button:hover {
-  border-color: #646cff;
+.activeBtn a{
+  background-color:#ffd700;
+  color: #ffff;
+  font-size: 2rem;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.user--name{
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.user--age{
+  font-size: 2.5rem;
+}
+.user--num{
+  font-size: 2rem;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width:800px) {
+  .paginationBtns{
+    width: 60%;
   }
-  a:hover {
-    color: #747bff;
+  .card:hover{
+    transform: none;
   }
-  button {
-    background-color: #f9f9f9;
+}
+
+@media (max-width:450px) {
+  .paginationBtns{
+    width: 90%;
+  }
+  .user--card,.user--card-red,.user--card--green{
+    width: 370px;
+    margin: 20px auto;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .user--ul {
+    max-width: 85%;
+  }
+  .links {
+    font-size: 1.5rem;
   }
 }
