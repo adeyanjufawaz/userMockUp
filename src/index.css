@@ -88,11 +88,11 @@ body{
 .links:hover{
   color: #fff;
 }
-.user--card,.user--card-red,.user--card--green{
+.user--card{
   width: 450px;
   border-radius: 15px;
   margin: 20px auto;
-  padding: 20px 10px;
+  padding: 20px 5px;
   text-align: center;
   background-color: rgb(80, 79, 79);
   color: #fff;
@@ -183,10 +183,9 @@ body{
   .paginationBtns{
     width: 100%;
   }
-  .user--card,.user--card-red,.user--card--green{
-    width: 370px;
+  .user--card{
     margin: 20px auto;
-    padding: 20px 10px;
+    padding: 15px 10px;
     text-align: center;
   }
   .user--ul {
