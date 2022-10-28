@@ -8,14 +8,14 @@ function FemaleUsers() {
 
   useEffect(() => {
     let getData = async () => {
-      let response = await fetch("https://randomuser.me/api/?results=50");
+      let response = await fetch("https://randomuser.me/api/?results=100&gender=female");
       let data = response.json();
       return data;
     };
     getData()
       .then((data) => {
         data = data.results;
-        setAllUsers(data.slice(0, 5));
+        setAllUsers(data.slice(0, 6));
         setLoading(!loading);
       })
       .catch((err) => {

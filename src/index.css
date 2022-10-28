@@ -143,6 +143,9 @@ body{
   color: #ffff;
   font-size: 2rem;
 }
+.user--name,.user--age,.user--num{
+  margin: 15px;
+}
 .user--name{
   font-size: 2.7rem;
   font-weight: 600;

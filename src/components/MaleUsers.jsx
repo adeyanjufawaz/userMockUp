@@ -8,13 +8,14 @@ function MaleUsers() {
 
   useEffect(() => {
     let getData = async () => {
-      let response = await fetch("https://randomuser.me/api/?results=100");
+      let response = await fetch("https://randomuser.me/api/?results=100&gender=male");
       let data = response.json();
       return data;
     };
     getData()
       .then((data) => {
         data = data.results;
+
         setAllUsers(data.slice(0, 6));
         setLoading(!loading);
       })
@@ -29,7 +30,6 @@ function MaleUsers() {
     <div className="user__card--box">
       {!loading ? (
         allUser.map((user) => {
-          if ((user.name.title = "Mr")) {
             return (
               <div key={user.email} className="user--card">
                 <div className="img--box">
@@ -47,7 +47,7 @@ function MaleUsers() {
               </div>
             );
           }
-        })
+        )
       ) : (
         <Loading />
       )}
