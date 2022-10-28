@@ -68,8 +68,8 @@ function RandomUsers() {
         <div className="user__card--box">
           {displayUsers}
           <ReactPaginate
-            previousLabel={"Prev"}
-            nextLabel={"Next"}
+            previousLabel={"<<"}
+            nextLabel={">>"}
             pageCount={pageCount}
             onPageChange={changePage}
             containerClassName={"paginationBtns"}

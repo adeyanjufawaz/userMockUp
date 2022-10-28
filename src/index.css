@@ -166,7 +166,7 @@ body{
 
 @media (max-width:450px) {
   .paginationBtns{
-    width: 90%;
+    width: 100%;
   }
   .user--card,.user--card-red,.user--card--green{
     width: 370px;
