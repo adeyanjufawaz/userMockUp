@@ -15,7 +15,7 @@ function FemaleUsers() {
     getData()
       .then((data) => {
         data = data.results;
-        setAllUsers(data.slice(0, 10));
+        setAllUsers(data.slice(0, 5));
         setLoading(!loading);
       })
       .catch((err) => {
