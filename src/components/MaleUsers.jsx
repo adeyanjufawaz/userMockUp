@@ -25,37 +25,35 @@ function MaleUsers() {
   }, []);
 
   return (
-    <>
+    <div>
+        <h1 className="user--header">Male Users</h1>
+    <div className="user__card--box">
       {!loading ? (
-        <div>
-          <h1 className="user--header">Male Users</h1>
-          {allUser.map((user) => {
-            if ((user.name.title = "Mr")) {
-              return (
-                <div>
-                  <div key={user.email} className="user--card">
-                    <div className="img--box">
-                      <img
-                        src={user.picture.medium}
-                        alt="user--image"
-                        className="card--img"
-                      />
-                    </div>
-                    <h1 className="user--name">
-                      Name: {user.name.title} {user.name.first} {user.name.last}
-                    </h1>
-                    <p className="user--age">Age: {user.dob.age} </p>
-                    <p className="user--num">Phone Number: {user.cell}</p>
-                  </div>
+        allUser.map((user) => {
+          if ((user.name.title = "Mr")) {
+            return (
+              <div key={user.email} className="user--card">
+                <div className="img--box">
+                  <img
+                    src={user.picture.medium}
+                    alt="user--image"
+                    className="card--img"
+                  />
                 </div>
-              );
-            }
-          })}
-        </div>
+                <h1 className="user--name">
+                  Name: {user.name.title} {user.name.first} {user.name.last}
+                </h1>
+                <p className="user--age">Age: {user.dob.age} </p>
+                <p className="user--num">Phone Number: {user.cell}</p>
+              </div>
+            );
+          }
+        })
       ) : (
         <Loading />
       )}
-    </>
+    </div>
+    </div>
   );
 }
 
