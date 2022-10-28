@@ -39,11 +39,10 @@ function Home() {
               <p>This displays Female users</p>
             </div>
           </Link>
-
-          <ErrorBoundary>
-            <Card4 />
-          </ErrorBoundary>
         </div>
+        <ErrorBoundary>
+          <Card4 />
+        </ErrorBoundary>
         <p className="sub--header">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo non, eum
           cumque neque soluta quia. Deserunt fugiat, ullam quibusdam officia

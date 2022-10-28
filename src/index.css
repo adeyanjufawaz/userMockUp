@@ -15,7 +15,8 @@ body{
   font-size: 2rem;
   color: red;
   text-align: center;
-  margin: 40xp;
+  margin: 40px;
+  display: block;
   letter-spacing: .2rem;
 }
 .content--box{
