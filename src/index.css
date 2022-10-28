@@ -95,7 +95,7 @@ body{
   margin: 20px auto;
   padding: 20px 10px;
   text-align: center;
-  background-color: #777;
+  background-color: rgb(80, 79, 79);
   color: #fff;
   box-shadow: 14px 17px 30px -6px rgba(0,0,0,0.25);
 }
@@ -116,8 +116,12 @@ body{
   transform: translate(-50%,-50%);
   height: 90%;
   width: 90%;
-  border-radius: 50%;
- 
+  border-radius: 50%; 
+}
+.user--header{
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px auto;
 }
 .paginationBtns{
   width: 40%;

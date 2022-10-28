@@ -25,6 +25,8 @@ function FemaleUsers() {
   }, []);
 
   return (
+    <div>
+        <h1 className="user--header">Female Users</h1>
     <div className="user__card--box">
       {!loading ? (
         allUser.map((user) => {
@@ -51,6 +53,8 @@ function FemaleUsers() {
         <Loading />
       )}
     </div>
+    </div>
+    
   );
 }
 

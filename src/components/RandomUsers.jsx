@@ -59,7 +59,9 @@ function RandomUsers() {
   };
 
   return (
-    <>
+    <div>
+        <h1 className="user--header">Random Users</h1>
+        <>
       {loading ? (
         <Loading />
       ) : (
@@ -79,6 +81,8 @@ function RandomUsers() {
         </div>
       )}
     </>
+    </div>
+    
   );
 }
 
