@@ -8,7 +8,6 @@ function RandomUsers() {
   const [allUsers, setAllUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [pageNum, setPageNum] = useState(0);
-  console.log(total.length);
   const usersPerPage = 10;
   const pagesVisited = pageNum * usersPerPage;
 

@@ -15,7 +15,6 @@ function MaleUsers() {
     getData()
       .then((data) => {
         data = data.results;
-        console.log(data);
         setAllUsers(data.slice(0, 6));
         setLoading(!loading);
       })

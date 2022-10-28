@@ -9,7 +9,6 @@ function FemaleUsers() {
   useEffect(() => {
     let getData = async () => {
       let response = await fetch("https://randomuser.me/api/?results=50");
-      // console.log(response)
       let data = response.json();
       return data;
     };
