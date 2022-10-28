@@ -21,7 +21,7 @@ function Home() {
             <div className="card">
               <h1>Random Users</h1>
               <i class="fa-solid fa-users fa-4x"></i>
-              <p>This displays random users</p>
+              <p>This displays datailed information about random users</p>
             </div>
           </Link>
 
@@ -29,7 +29,7 @@ function Home() {
             <div className="card">
               <h1>Male Users</h1>
               <i class="fa-solid fa-user fa-4x"></i>
-              <p>This displays Male users</p>
+              <p>This displays datailed information about only Male users</p>
             </div>
           </Link>
 
@@ -37,7 +37,7 @@ function Home() {
             <div className="card">
               <h1>Female Users</h1>
               <i class="fa-solid fa-person-dress fa-4x"></i>
-              <p>This displays Female users</p>
+              <p>This displays datailed information about Female users</p>
             </div>
           </Link>
         </div>
