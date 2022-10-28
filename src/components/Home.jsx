@@ -13,7 +13,8 @@ function Home() {
         <p className="sub--header">
           This is a mock up websites, that give deatils about users. It make use
           of the <b>Random User Generator API</b> to get some random user
-          details and display the outcome to the users
+          details and display the outcome in form of a card, containing detailed
+          informations about a particular user/users.
         </p>
         <div className="main__card--box">
           <Link to="/users" className="links">
